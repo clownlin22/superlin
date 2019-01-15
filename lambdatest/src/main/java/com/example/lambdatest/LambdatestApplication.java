@@ -1,4 +1,4 @@
-package com.example.lambdatest.lambdatest;
+package com.example.lambdatest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
