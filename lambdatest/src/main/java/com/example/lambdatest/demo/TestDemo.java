@@ -1,7 +1,10 @@
 package com.example.lambdatest.demo;
 
 
-import java.util.stream.IntStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @Author: lxy
@@ -54,14 +57,23 @@ public class TestDemo {
         //me.printMoney(moneyformat.andThen(s -> "人民币" + s));
 
         /**
-         *
+         * 4
          */
-        int[] nums={1,2,3};
-        int sum1 = IntStream.of(nums).sum();
-        //map中间操作
-        //sum终止操作
-        int sum2 = IntStream.of(nums).map(i->i*2).sum();
+        //int[] nums={1,2,3};
+        //int sum1 = IntStream.of(nums).sum();
+        ////map中间操作
+        ////sum终止操作
+        //int sum2 = IntStream.of(nums).map(i->i*2).sum();
 
+        /**
+         * 5
+         */
+        Integer[] nums1={1,3,2};
+        int[] nums2={1,3,2};
+        List<Integer> ints =new ArrayList<>(Arrays.asList(nums1));
+        ints.forEach(i -> System.out.println(i));
+        List<Integer> resultList = new ArrayList<>(nums2.length);
+        Collections.addAll(resultList,nums1);
 
 
 
