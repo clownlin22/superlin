@@ -1,0 +1,29 @@
+server:
+  port: 8050
+---
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    pool:
+        max-active: 8
+        max-wait: 8
+        min-idle: 0
+        max-idle: 8
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spbbase?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: lin123
+mybatis-plus:
+  # 实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: com.example.oauthcommon.domain
+  configuration:
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+
+
+
