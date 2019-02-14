@@ -17,4 +17,16 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         return super.authenticationManagerBean();
     }
 
+    //@Override
+    //protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+    //    auth.inMemoryAuthentication()
+    //            .withUser("admin")
+    //            .password("{noop}admin")
+    //            //.password(PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("admin"))
+    //            //.password(passwordEncoder.encode("admin"))
+    //            .roles("admin")
+    //    ;
+    //}
+
+
 }
