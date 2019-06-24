@@ -5,7 +5,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>easyexcel</module>
-    </modules>
+		<module>design_patterns</module>
+	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
